@@ -4,9 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## RUN PWA
 
-Run `ng build --prod` 
-Use `http-server -p 8080` to serve generated content stored in `/dist` folder
-Navigate to `http://localhost:8080`
+- Install dependencies `npm install`
+- Run `ng build --prod` 
+- Go to `/dist` folder
+- Serve generated content using `http-server -p 8080` (need to be installed using npm install http-server) 
+ -Navigate to `http://localhost:8080`
 
 ## PWA FEATURE AVAILABLE
 
