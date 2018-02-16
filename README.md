@@ -2,26 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.
 
-## Development server
+## RUN PWA
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng build --prod` 
+Use `http-server -p 8080` to serve generated content stored in `/dist` folder
+Navigate to `http://localhost:8080`
 
-## Code scaffolding
+## PWA FEATURE AVAILABLE
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- `Add to homescreen` like a native application : 
+This feature is powered by the `manifest.json` inside the app.
+- `offline mode` : 
+This feature is powered by service worker technology configured in `ngsw-config` inside the app.
