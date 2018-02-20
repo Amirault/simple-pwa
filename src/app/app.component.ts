@@ -11,9 +11,12 @@ export class AppComponent {
 
   constructor(private swUpdate: SwUpdate) {
     this.swUpdate.available.subscribe((event) => {
-      this.swUpdate.activateUpdate().then(() => {
-        document.location.reload();
-      });
+      const message = 'New version available ( ' + event.current.appData["version"] + ' => ' + event.available.appData["version"] + ' ) , update now ?';
+      if (confirm(message)) {
+        this.swUpdate.activateUpdate().then(() => {
+          document.location.reload();
+        });
+      }
     });
   }
 }
